@@ -18,7 +18,7 @@ if (anni < 18) {
 let prezzo = km * 0.21 * sconto;
 console.log(prezzo);
 
-if ((isNaN(anni))||(isNaN(km))) {
+if ((isNaN(anni))||(isNaN(km))||(km <= 0)||(anni < 0)) {
     prezzo = 'Non hai inserito un numero corretto';
 } else {
     prezzo = 'Il prezzo calcolato è di € ' + prezzo.toFixed(2);
